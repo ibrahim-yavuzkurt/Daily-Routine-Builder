@@ -1,0 +1,27 @@
+appId: com.lucy.assistant
+productName: Lucy
+directories:
+  output: dist
+files:
+  - out/**/*
+  - package.json
+asarUnpack:
+  - node_modules/better-sqlite3/**
+extraResources:
+  - from: build/icon.png
+    to: icon.png
+win:
+  icon: build/icon.png
+  target:
+    - target: portable
+      arch:
+        - x64
+  artifactName: Lucy.exe
+portable:
+  artifactName: Lucy.exe
+mac:
+  icon: build/icon.png
+  target: dmg
+linux:
+  icon: build/icon.png
+  target: AppImage

@@ -1,0 +1,21 @@
+node_modules
+out
+dist
+release
+
+# Anahtarlar ve yerel ortam. Örnek dosya repoda kalır.
+.env
+.env.*
+!.env.example
+
+# Sohbet yedeği, görev veritabanı ve kişisel dışa aktarımlar
+lucy_yedek
+sohbet.jsonl
+*.db
+*.sqlite
+*.sqlite3
+
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
